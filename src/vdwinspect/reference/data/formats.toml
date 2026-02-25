@@ -1,0 +1,141 @@
+[lang]
+default = 'bad'
+csv_path = 'iso639.csv'
+csv_code_col = 'abbrev'
+csv_label_col = 'description'
+
+[flg]
+default = 'bad'
+
+[flg.mapping]
+Y = 'yes'
+N = 'no'
+U = 'unknown'
+E = 'external'
+
+
+[incflg]
+default = 'bad'
+
+[incflg.mapping]
+K = 'known incomplete'
+N = 'not known incomplete'
+X = 'not implemented'
+
+
+[eb]
+default = 'bad'
+
+[eb.mapping]
+I = 'insurance'
+G = 'geography'
+B = 'both ins + geog'
+P = 'patient only'
+
+
+[race]
+default = 'bad'
+
+[race.mapping]
+HP = 'Native Hawaiian or Other Pacific Islander'
+IN = 'American Indian/Alaska Native'
+AS = 'Asian'
+BA = 'Black or African American'
+WH = 'White'
+MU = 'More than one race, particular races unknown or not reported'
+OT = 'Other'
+UN = 'Unknown or Not Reported'
+
+
+[sexadm]
+default = 'bad'
+
+[sexadm.mapping]
+F = 'Female'
+M = 'Male'
+X = 'Neither Male Nor Female'
+O = 'Other'
+U = 'Unknown /uncertain / missing'
+
+
+[sexaab]
+default = 'bad'
+
+[sexaab.mapping]
+F = 'Female'
+M = 'Male'
+I = 'Intersex'
+O = 'Other'
+U = 'Uncertain, Unknown or Not recorded on birth certificate'
+C = 'Choose not to disclose'
+
+
+[gi]
+default = 'bad'
+
+[gi.mapping]
+FF = 'Female'
+MM = 'Male'
+FM = 'Trans Male'
+MF = 'Trans Female'
+GQ = 'Genderqueer or non-conforming or non-binary or genderfluid'
+OT = 'Other'
+ND = 'Choose not to disclose'
+UN = 'Unknown'
+
+
+[so]
+default = 'bad'
+
+[so.mapping]
+B = 'Bisexual'
+T = 'Heterosexual'
+M = 'Homosexual'
+A = 'Asexual'
+P = 'Pansexual'
+Q = 'Queer'
+O = 'Other'
+D = 'Does not know'
+N = 'Choose not to disclose'
+U = 'Not asked/no information'
+
+
+[use]
+default = 'bad'
+
+[use.mapping]
+S = 'Spoken'
+W = 'Written'
+B = 'Both'
+U = 'Unknown'
+
+
+[flgnm]
+default = 'bad'
+
+[flgnm.mapping]
+flg_commercial = 'Commercial'
+flg_highdeductible = 'High-Deductible'
+flg_medicaid = 'Medicaid'
+flg_medicare = 'Medicare'
+flg_medicare_a = 'Medicare Part A'
+flg_medicare_b = 'Medicare Part B'
+flg_medicare_c = 'Medicare Part C'
+flg_medicare_d = 'Medicare Part D'
+flg_other = 'Other'
+flg_privatepay = 'Privatepay'
+flg_selffunded = 'Self Funded'
+flg_statesubsidized = 'State Subsidized'
+flg_hmo = 'HMO'
+flg_pos = 'Point of Service'
+flg_ppo = 'Preferred Provider Organization'
+flg_indemnity = 'Traditional Indemnity'
+
+
+[result]
+default = 'bad'
+
+[result.mapping]
+fail = 'red'
+warning = 'orange'
+pass = 'green'

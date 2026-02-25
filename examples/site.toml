@@ -1,0 +1,7 @@
+[engines]
+default = "sqlite://"
+
+[table_map]
+vdw_demographic = "demog"
+vdw_enroll = "enroll"
+vdw_languages = "language"

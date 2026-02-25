@@ -1,0 +1,36 @@
+[project]
+name = "vdwinspect"
+version = "0.1.0"
+description = "VDW QA"
+requires-python = ">=3.10"
+dependencies = [
+    "great-tables>=0.20.0",
+    "ipykernel>=7.2.0",
+    "loguru>=0.7.3",
+    "polars>=1.38.1",
+    "typer>=0.24.1",
+    "vdwcore",
+]
+
+[project.scripts]
+vdwinspect = "vdwinspect.cli:app"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = "src"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv.sources]
+vdwcore = { git = "https://github.com/kpwhri/vdwcore.git" }
